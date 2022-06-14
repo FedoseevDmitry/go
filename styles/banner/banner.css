@@ -1,0 +1,30 @@
+.banner {
+  position: inherit;
+  padding-top: 146px;
+  height: 1019px;
+}
+
+.banner:after {
+  content: "";
+  background-image: url('banner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  height: 762px;
+  width: 675px;
+  top: 207px;
+  right: 361px;
+}
+
+.banner__title {
+  font-size: 150px;
+  font-weight: 900;
+  letter-spacing: -0.1em;
+  line-height: 100%;
+}
+
+.banner__description {
+  padding-left: 104px;
+  font-size: 28px;
+  line-height: 50px;
+}

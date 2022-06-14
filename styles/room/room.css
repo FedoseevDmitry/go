@@ -1,0 +1,52 @@
+.room__title {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+.room__list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.room__item {
+  height: 349px;
+  width: 580px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.room__name {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 80px;
+}
+
+.vibes {
+  background-image: url('room-1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.star-wars {
+  background-image: url('room-2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.wild-west {
+  background-image: url('room-3.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.neon-style {
+  background-image: url('room-4.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
