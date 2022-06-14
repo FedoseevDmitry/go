@@ -1,0 +1,1 @@
+Project <a href="https://fedoseevdmitry.github.io/go/">"Game Over"</a> Front-End Course by <a href="https://methed.ru/">MethEd</a>
