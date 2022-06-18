@@ -130,6 +130,7 @@
 
 .contacts-set__input_date,
 .contacts-set__input_time {
+  position: relative;
   max-width: 134px;
   padding: 12px 20px;
   display: flex;
@@ -140,6 +141,7 @@
 }
 
 .contacts-set__select {
+  position: relative;
   display: flex;
   align-self: flex-end;
   min-width: 300px;
@@ -149,8 +151,17 @@
   -webkit-appearance: none;
 }
 
-.contacts-set__input_select::placeholder {
-  color: #000;
+.contacts-set__input_date:after,
+.contacts-set__input_time:after,
+.contacts-set__select:after {
+  content: "";
+  position: absolute;
+  background-image: url(img/svg/arrow.svg);
+  top: 19px;
+  right: 17px;
+  width: 21px;
+  height: 15px;
+  z-index: 100;
 }
 
 .reserve__wrapper-info {
