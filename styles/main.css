@@ -42,6 +42,11 @@ h1, h2, h3, p, figure, fieldset {
   margin: 0;
 }
 
+fieldset {
+  border: none;
+  padding: 0;
+}
+
 h1,
 h2 {
   text-transform: uppercase;

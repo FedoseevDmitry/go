@@ -1,7 +1,207 @@
+.reserve {
+  background: #440F51;
+  padding-top: 80px;
+}
+
+.reserve__form {
+  margin-bottom: 40px;
+}
+
 .reserve__title {
   font-size: 40px;
   line-height: 50px;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+}
+
+.reserve__legend {
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.reserve__fieldset {
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.halls {
+  justify-content: space-between;
+}
+
+.halls__label {
+  padding: 8px 15px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.halls__radio {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+.reserve__fieldset_constructor {
+  justify-content: space-around;
+  margin-bottom: 60px;
+}
+
+.console-set,
+.boardgame-set,
+.extra-set {
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 0;
+}
+
+.console-set__legend,
+.boardgame-set__legend,
+.extra-set__legend {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 23px;
+}
+
+.console-set__label,
+.boardgame-set__label,
+.extra-set__label {
+  display: flex;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 25px;
+  align-items: center;
+}
+
+.console-set__radio {
+  width: 27px;
+  height: 27px;
+  background-color: #fff;
+  margin-right: 12px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #211E1E;
+}
+
+.boardgame-set__checkbox,
+.extra-set__checkbox {
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  margin-right: 12px;
+}
+
+.contacts-set {
+  display: flex;
+  max-width: 980px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+.reserve__wrapper-date {
+  display: flex;
+  flex-basis: 300px;
+  max-width: 300px;
+  flex-wrap: wrap;
+  gap: 36px 32px;
+  align-self: flex-end;
+}
+
+.contacts-set__input,
+.contacts-set__select {
+  height: 52px;
+  border: none;
+  font-size: 18px;
+  line-height: 28px;
+  color: #211E1E;
+}
+
+.contacts-set__input_date,
+.contacts-set__input_time {
+  max-width: 134px;
+  padding: 12px 20px;
+  display: flex;
+  align-self: flex-end;
+  font-size: 18px;
+  line-height: 28px;
+  color: #211E1E;
+}
+
+.contacts-set__select {
+  display: flex;
+  align-self: flex-end;
+  min-width: 300px;
+  padding: 12px 20px;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+.contacts-set__input_select::placeholder {
+  color: #000;
+}
+
+.reserve__wrapper-info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  row-gap: 14px;
+}
+
+.contacts-set__label {
+  display: flex;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  flex-direction: column;
+}
+
+.contacts-set__input_text {
+  width: 280px;
+  margin-top: 6px;
+}
+
+.contacts-set__input_phone,
+.contacts-set__input_email {
+  width: 300px;
+  margin-top: 6px;
+}
+
+.reserve__wrapper-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  row-gap: 14px;
+}
+
+.reserve__wrapper-btn {
+  width: 980px;
+  margin: 0 auto;
+}
+
+.reserve__btn {
+  display: block;
+  margin-left: auto;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #6C0287;
+  background: #FFFFFF;
+  border-radius: 10px;
+  width: 300px;
+  height: 60px;
+  border: none;
 }

@@ -1,0 +1,61 @@
+.features__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  max-width: 980px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 41px;
+  white-space: pre-line;
+}
+
+.features__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 20px;
+}
+
+.features__item {
+  position: relative;
+  height: 228px;
+  width: 380px;
+  padding-top: 166px;
+  padding-left: 40px;
+}
+
+.features__item_vr {
+  background-image: url('img/vr.jpg');
+  background-size: contain;
+}
+
+.features__item_audio {
+  background-image: url('img/audio.jpg');
+  background-size: contain;
+}
+
+.features__item_microphone {
+  background-image: url('img/micro.jpg');
+  background-size: contain;
+}
+
+.features__item_board-games {
+  background-image: url('img/boardgame.jpg');
+  background-size: contain;
+}
+
+.features__item_video {
+  background-image: url('img/video.jpg');
+  background-size: contain;
+}
+
+.features__item_console {
+  background-image: url('img/console.jpg');
+  background-size: contain;
+}
+
+.features__text {
+  white-space: pre-line;
+  font-weight: 700;
+}
