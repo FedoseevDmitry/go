@@ -90,8 +90,22 @@
 .social__link {
   display: block;
   color: #fff;
-  height: 48px;
-  width: 48px;
+  height: 50px;
+  width: 50px;
+  border: 1px solid transparent;
+}
+
+.social__link:hover {
+  color: #EADEED;
+}
+
+.social__link:active {
+  color: #CD06FF;
+  border-color: transparent;
+}
+
+.social__link:focus {
+  border-color: #CD06FF;
 }
 
 .copyright__wrapper {

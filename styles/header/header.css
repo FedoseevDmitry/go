@@ -31,6 +31,10 @@
   text-transform: uppercase;
 }
 
+.nav__link:hover {
+  color: #6C0287;
+}
+
 .header__btn {
   height: 55px;
   width: 280px;
@@ -43,4 +47,19 @@
   border: 3px solid #CD06FF;
   border-radius: 10px;
   background-color: transparent;
+}
+
+.header__btn:hover {
+  background-color: #6C0287;
+  border-color: transparent;
+}
+
+.header__btn:active {
+  background-color: #640AA3;
+  border-color: transparent;
+}
+
+.header__btn:focus {
+  background-color: #6C0287;
+  border-color: transparent;
 }

@@ -42,6 +42,25 @@
   font-size: 30px;
   line-height: 40px;
   cursor: pointer;
+  border: 3px solid transparent;
+  min-width: 250px;
+  min-height: 55px;
+}
+
+.halls__label:hover {
+  background-color: #EADEED;
+  border-color: #640AA3;
+}
+
+.halls__label:active {
+  background-color: #6C0287;
+  border-color: #FFFFFF;
+  color: #fff;
+}
+
+.halls__label:focus {
+  background-color: #FFFFFF;
+  border-color: #640AA3;
 }
 
 .halls__radio {
@@ -101,6 +120,13 @@
   margin-right: 12px;
 }
 
+.console-set__radio:focus,
+.boardgame-set__checkbox:focus,
+.extra-set__checkbox:focus {
+  outline: 1px solid #CD06FF;
+  outline-offset: 3px;
+}
+
 .contacts-set {
   display: flex;
   max-width: 980px;
@@ -119,6 +145,10 @@
   align-self: flex-end;
 }
 
+.contacts-set__label {
+  position: relative;
+}
+
 .contacts-set__input,
 .contacts-set__select {
   height: 52px;
@@ -126,11 +156,11 @@
   font-size: 18px;
   line-height: 28px;
   color: #211E1E;
+  border: 2px solid transparent;
 }
 
 .contacts-set__input_date,
 .contacts-set__input_time {
-  position: relative;
   max-width: 134px;
   padding: 12px 20px;
   display: flex;
@@ -140,8 +170,12 @@
   color: #211E1E;
 }
 
+.contacts-set__input:focus,
+.contacts-set__select:focus {
+  border-color: #CD06FF;
+}
+
 .contacts-set__select {
-  position: relative;
   display: flex;
   align-self: flex-end;
   min-width: 300px;
@@ -151,17 +185,17 @@
   -webkit-appearance: none;
 }
 
-.contacts-set__input_date:after,
-.contacts-set__input_time:after,
-.contacts-set__select:after {
+.contacts-set__label_date:before,
+.contacts-set__label_time:before,
+.contacts-set__label_select:before {
   content: "";
   position: absolute;
   background-image: url(img/svg/arrow.svg);
+  background-repeat: no-repeat;
   top: 19px;
   right: 17px;
   width: 21px;
   height: 15px;
-  z-index: 100;
 }
 
 .reserve__wrapper-info {
@@ -215,4 +249,19 @@
   width: 300px;
   height: 60px;
   border: none;
+  border: 3px solid transparent;
+}
+
+.reserve__btn:hover {
+  background-color: #EADEED;
+  border-color: #6C0287;
+}
+
+.reserve__btn:active {
+  background-color: #EADEED;
+}
+
+.reserve__btn:focus {
+  background-color: #FFFFFF;
+  border-color: #6C0287;
 }

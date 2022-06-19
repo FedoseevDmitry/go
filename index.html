@@ -86,10 +86,10 @@
 
 
         <a class="banner__arrow" href="#features">
-          <svg width="97" height="97" viewbox="0 0 97 97" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="48.5" cy="48.5" r="48" stroke="white"/>
-            <rect x="34.4255" y="43.9162" width="1.82001" height="20.0201" transform="rotate(-44.9975 34.4255 43.9162)" fill="white"/>
-            <rect x="48.5807" y="58.0737" width="1.82001" height="20.0201" transform="rotate(-134.997 48.5807 58.0737)" fill="white"/>
+          <svg width="97" height="97" viewbox="0 0 97 97" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="48.5" cy="48.5" r="48"/>
+            <rect x="34.4255" y="43.9162" width="1.82001" height="20.0201" transform="rotate(-44.9975 34.4255 43.9162)" fill="currentColor"/>
+            <rect x="48.5807" y="58.0737" width="1.82001" height="20.0201" transform="rotate(-134.997 48.5807 58.0737)" fill="currentColor"/>
           </svg>            
         </a>
 
@@ -246,15 +246,20 @@
             <legend class="reserve__legend">Выбери дату и время</legend>
 
             <div class="reserve__wrapper-date">
+              <label class="contacts-set__label contacts-set__label_date">
+                <input class="contacts-set__input contacts-set__input_date" type="text" onfocus="(this.type = 'date')" name="date" value="Дата" required>
+              </label>
 
-              <input class="contacts-set__input contacts-set__input_date" type="text" onfocus="(this.type = 'date')" name="date" value="Дата" required>
-
-              <input class="contacts-set__input contacts-set__input_time" type="text" onfocus="(this.type = 'time')" name="time" value="Время" required>
-
-              <select class="contacts-set__select" name="сount" required>
-                <option hidden value="">Сколько человек</option>
-                <option value="1">1</option>
-              </select>
+              <label class="contacts-set__label contacts-set__label_time">
+                <input class="contacts-set__input contacts-set__input_time" type="text" onfocus="(this.type = 'time')" name="time" value="Время" required>
+              </label>
+              
+              <label class="contacts-set__label contacts-set__label_select">
+                <select class="contacts-set__select" name="сount" required>
+                  <option hidden value="">Сколько человек</option>
+                  <option value="1">1</option>
+                </select>
+              </label>
 
             </div>
 

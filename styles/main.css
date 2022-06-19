@@ -58,6 +58,13 @@ section {
   padding-bottom: 50px;
 }
 
+input:focus,
+button:focus,
+a:focus,
+select:focus {
+  outline: none;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(1px 1px 1px 1px);

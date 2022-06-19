@@ -37,6 +37,14 @@
   cursor: pointer;
 }
 
+.faq__item:nth-child(even):hover::after {
+  background-image: url("svg/hover.svg");
+}
+
+.faq__item:nth-child(even):active::after {
+  background-image: url("svg/close.svg");
+}
+
 .faq__item:nth-child(odd):after {
   content: "";
   display: inline-block;
@@ -48,4 +56,12 @@
   top: 21px;
   right: 70px;
   cursor: pointer;
+}
+
+.faq__item:nth-child(odd):hover::after {
+  background-image: url("svg/hover-purple.svg");
+}
+
+.faq__item:nth-child(odd):active::after {
+  background-image: url("svg/close-purple.svg");
 }

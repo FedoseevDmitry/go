@@ -5,7 +5,7 @@
 
 .banner:after {
   content: "";
-  background-image: url('banner.png');
+  background-image: url('img/banner.png');
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -83,18 +83,49 @@
   font-size: 26px;
   line-height: 30px;
   text-transform: uppercase;
-  background: #6C0287;
+  background-color: #6C0287;
   border-radius: 10px;
   padding: 25px 69px;
   max-width: 374px;
   box-shadow: 0 0 10px #6C0287;
 }
 
+.banner__btn:hover {
+  background-color: #840AA3;
+}
+
+.banner__btn:active {
+  background-color: #640AA3;
+}
+
+.banner__btn:focus {
+  background-color: #840AA3;
+}
+
 .banner__arrow {
   position: absolute;
-  height: 97px;
-  width: 97px;
-  left: 669px;
-  bottom: 90px;
+  height: 98px;
+  width: 98px;
+  left: 667px;
+  bottom: 88px;
   z-index: 1;
+  color: #fff;
+  fill: transparent;
+  stroke: #fff;
+  border: 1px solid transparent;
+}
+
+.banner__arrow:hover {
+  fill: #fff;
+  color: #000;
+  stroke: none;
+}
+
+.banner__arrow:active {
+  fill: #CD06FF;
+  color: #fff;
+}
+
+.banner__arrow:focus {
+  border-color: #CD06FF;
 }
