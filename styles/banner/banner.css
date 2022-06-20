@@ -118,12 +118,13 @@
 .banner__arrow:hover {
   fill: #fff;
   color: #000;
-  stroke: none;
+  stroke: #fff;
 }
 
 .banner__arrow:active {
   fill: #CD06FF;
   color: #fff;
+  stroke: #CD06FF;
 }
 
 .banner__arrow:focus {

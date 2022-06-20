@@ -25,28 +25,30 @@
   font-weight: 700;
   font-size: 70px;
   line-height: 80px;
+  white-space: pre-line;
+  text-align: center;
 }
 
 .vibes {
-  background-image: url('room-1.png');
+  background-image: url('img/room-1.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .star-wars {
-  background-image: url('room-2.png');
+  background-image: url('img/room-2.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .wild-west {
-  background-image: url('room-3.png');
+  background-image: url('img/room-3.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .neon-style {
-  background-image: url('room-4.png');
+  background-image: url('img/room-4.png');
   background-size: cover;
   background-repeat: no-repeat;
 }

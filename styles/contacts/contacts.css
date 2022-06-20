@@ -121,3 +121,9 @@
   flex-direction: column;
   gap: 6px;
 }
+
+.contacts__phone:hover,
+.contacts__email:hover,
+.copyright__email:hover {
+  color: #6C0287;
+}

@@ -25,6 +25,10 @@
   padding-left: 40px;
 }
 
+.features__item:hover {
+  transform: scale(110%);
+}
+
 .features__item_vr {
   background-image: url('img/vr.jpg');
   background-size: contain;

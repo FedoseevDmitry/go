@@ -65,6 +65,12 @@ select:focus {
   outline: none;
 }
 
+*:hover,
+*:active,
+*:focus {
+  transition: all .3s ease-in-out;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(1px 1px 1px 1px);
