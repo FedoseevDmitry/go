@@ -24,7 +24,7 @@
   font-size: 150px;
   line-height: 100%;
   letter-spacing: -0.1em;
-  color: #FFFFFF;
+  color: var(--color-text-main);
 }
 
 .banner__description {
@@ -58,7 +58,7 @@
   font-size: 30px;
   line-height: 34px;
   text-align: center;
-  color: #FFFFFF;
+  color: var(--color-text-main);
   align-self: flex-end;
   white-space: pre-line;
 }
@@ -67,7 +67,7 @@
   font-weight: 900;
   font-size: 100px;
   line-height: 141px;
-  color: #CD06FF;
+  color: var(--color-purple);
 }
 
 .wrapper__text_font-big {
@@ -75,7 +75,7 @@
   font-size: 75px;
   line-height: 106px;
   font-variant: small-caps;
-  color: #CD06FF;
+  color: var(--color-purple);
 }
 
 .banner__btn {
@@ -83,23 +83,26 @@
   font-size: 26px;
   line-height: 30px;
   text-transform: uppercase;
-  background-color: #6C0287;
+  background-color: var(--color-dark-purple);
   border-radius: 10px;
   padding: 25px 69px;
   max-width: 374px;
-  box-shadow: 0 0 10px #6C0287;
+  box-shadow: 0 0 10px var(--color-dark-purple);
 }
 
 .banner__btn:hover {
-  background-color: #840AA3;
+  background-color: var(--color-bright-purple);
+  transition: all .3s linear;
 }
 
 .banner__btn:active {
-  background-color: #640AA3;
+  background-color: var(--color-deep-purple);
+  transition: all .3s linear;
 }
 
 .banner__btn:focus {
-  background-color: #840AA3;
+  background-color: var(--color-bright-purple);
+  transition: all .3s linear;
 }
 
 .banner__arrow {
@@ -109,24 +112,27 @@
   left: 667px;
   bottom: 88px;
   z-index: 1;
-  color: #fff;
+  color: var(--color-text-main);
   fill: transparent;
-  stroke: #fff;
+  stroke: var(--color-text-main);
   border: 1px solid transparent;
 }
 
 .banner__arrow:hover {
-  fill: #fff;
-  color: #000;
-  stroke: #fff;
+  fill: var(--color-text-main);
+  color: var(--color-text-black);
+  stroke: var(--color-text-main);
+  transition: all .3s linear;
 }
 
 .banner__arrow:active {
-  fill: #CD06FF;
-  color: #fff;
-  stroke: #CD06FF;
+  fill: var(--color-purple);
+  color: var(--color-text-main);
+  stroke: var(--color-purple);
+  transition: all .3s linear;
 }
 
 .banner__arrow:focus {
-  border-color: #CD06FF;
+  border-color: var(--color-purple);
+  transition: all .3s linear;
 }

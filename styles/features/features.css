@@ -25,8 +25,14 @@
   padding-left: 40px;
 }
 
-.features__item:hover {
+.features__item:nth-child(3n+2) {
+  transform: translateY(70px);
+}
+
+.features__item:hover,
+.features__item:nth-child(3n+2):hover {
   transform: scale(110%);
+  transition: all .3s ease-in-out;
 }
 
 .features__item_vr {

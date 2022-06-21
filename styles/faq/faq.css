@@ -39,10 +39,12 @@
 
 .faq__item:nth-child(even):hover::after {
   background-image: url("svg/hover.svg");
+  transition: all .3s ease-in-out;
 }
 
 .faq__item:nth-child(even):active::after {
   background-image: url("svg/close.svg");
+  transition: all .3s ease-in-out;
 }
 
 .faq__item:nth-child(odd):after {
@@ -60,8 +62,10 @@
 
 .faq__item:nth-child(odd):hover::after {
   background-image: url("svg/hover-purple.svg");
+  transition: all .3s ease-in-out;
 }
 
 .faq__item:nth-child(odd):active::after {
   background-image: url("svg/close-purple.svg");
+  transition: all .3s ease-in-out;
 }

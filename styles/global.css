@@ -14,8 +14,8 @@ body {
   font-size: 20px;
   line-height: 28px;
   font-weight: 400;
-  color: #fff;
-  background-color: #1B1A1B;
+  color: var(--color-text-main);
+  background-color: var(--color-text-dark);
 }
 
 img {
@@ -63,12 +63,6 @@ button:focus,
 a:focus,
 select:focus {
   outline: none;
-}
-
-*:hover,
-*:active,
-*:focus {
-  transition: all .3s ease-in-out;
 }
 
 .visually-hidden {

@@ -33,9 +33,9 @@
 
 .halls__label {
   padding: 8px 15px;
-  background: #FFFFFF;
+  background: var(--color-text-main);
   border-radius: 8px;
-  color: #000;
+  color: var(--color-text-black);
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
@@ -48,19 +48,22 @@
 }
 
 .halls__label:hover {
-  background-color: #EADEED;
-  border-color: #640AA3;
+  background-color: var(--color-btn-hover);
+  border-color: var(--color-deep-purple);
+  transition: all .3s ease-in-out;
 }
 
 .halls__label:active {
-  background-color: #6C0287;
-  border-color: #FFFFFF;
-  color: #fff;
+  background-color: var(--color-dark-purple);
+  border-color: var(--color-text-main);
+  color: var(--color-text-main);
+  transition: all .3s ease-in-out;
 }
 
 .halls__label:focus {
-  background-color: #FFFFFF;
-  border-color: #640AA3;
+  background-color: var(--color-text-main);
+  border-color: var(--color-deep-purple);
+  transition: all .3s ease-in-out;
 }
 
 .halls__radio {
@@ -104,7 +107,7 @@
 .console-set__radio {
   width: 27px;
   height: 27px;
-  background-color: #fff;
+  background-color: var(--color-text-main);
   margin-right: 12px;
   font-weight: 400;
   font-size: 18px;
@@ -116,15 +119,16 @@
 .extra-set__checkbox {
   width: 25px;
   height: 25px;
-  background-color: #fff;
+  background-color: var(--color-text-main);
   margin-right: 12px;
 }
 
 .console-set__radio:focus,
 .boardgame-set__checkbox:focus,
 .extra-set__checkbox:focus {
-  outline: 1px solid #CD06FF;
+  outline: 1px solid var(--color-purple);
   outline-offset: 3px;
+  transition: all .3s ease-in-out;
 }
 
 .contacts-set {
@@ -155,7 +159,7 @@
   border: none;
   font-size: 18px;
   line-height: 28px;
-  color: #211E1E;
+  color: var(--color-text-deep-black);
   border: 2px solid transparent;
 }
 
@@ -167,12 +171,13 @@
   align-self: flex-end;
   font-size: 18px;
   line-height: 28px;
-  color: #211E1E;
+  color: var(--color-text-deep-black);
 }
 
 .contacts-set__input:focus,
 .contacts-set__select:focus {
-  border-color: #CD06FF;
+  border-color: var(--color-purple);
+  transition: all .3s ease-in-out;
 }
 
 .contacts-set__select {
@@ -243,8 +248,8 @@
   font-size: 22px;
   line-height: 28px;
   text-transform: uppercase;
-  color: #6C0287;
-  background: #FFFFFF;
+  color: var(--color-dark-purple);
+  background: var(--color-text-main);
   border-radius: 10px;
   width: 300px;
   height: 60px;
@@ -253,15 +258,18 @@
 }
 
 .reserve__btn:hover {
-  background-color: #EADEED;
-  border-color: #6C0287;
+  background-color: var(--color-btn-hover);
+  border-color: var(--color-dark-purple);
+  transition: all .3s ease-in-out;
 }
 
 .reserve__btn:active {
-  background-color: #EADEED;
+  background-color: var(--color-btn-hover);
+  transition: all .3s ease-in-out;
 }
 
 .reserve__btn:focus {
-  background-color: #FFFFFF;
-  border-color: #6C0287;
+  background-color: var(--color-text-main);
+  border-color: var(--color-dark-purple);
+  transition: all .3s ease-in-out;
 }

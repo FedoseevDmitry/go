@@ -32,7 +32,8 @@
 }
 
 .nav__link:hover {
-  color: #6C0287;
+  color: var(--color-dark-purple);
+  transition: all .3s ease-in-out;
 }
 
 .header__btn {
@@ -44,22 +45,25 @@
   text-transform: uppercase;
   text-align: center;
   color: #fff;
-  border: 3px solid #CD06FF;
+  border: 3px solid var(--color-purple);
   border-radius: 10px;
   background-color: transparent;
 }
 
 .header__btn:hover {
-  background-color: #6C0287;
+  background-color: var(--color-dark-purple);
   border-color: transparent;
+  transition: all .3s ease-in-out;
 }
 
 .header__btn:active {
-  background-color: #640AA3;
+  background-color: var(--color-deep-purple);
   border-color: transparent;
+  transition: all .3s ease-in-out;
 }
 
 .header__btn:focus {
-  background-color: #6C0287;
+  background-color: var(--color-dark-purple);
   border-color: transparent;
+  transition: all .3s ease-in-out;
 }

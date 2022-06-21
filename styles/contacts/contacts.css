@@ -1,9 +1,7 @@
 .contacts {
   padding-bottom: 10px;
   position: relative;
-  background-image: url('img/background.png');
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
 }
 
 .contacts__title {
@@ -89,23 +87,26 @@
 
 .social__link {
   display: block;
-  color: #fff;
+  color: var(--color-text-main);
   height: 50px;
   width: 50px;
   border: 1px solid transparent;
 }
 
 .social__link:hover {
-  color: #EADEED;
+  color: var(--color-btn-hover);
+  transition: all .3s ease-in-out;
 }
 
 .social__link:active {
-  color: #CD06FF;
+  color: var(--color-purple);
   border-color: transparent;
+  transition: all .3s ease-in-out;
 }
 
 .social__link:focus {
-  border-color: #CD06FF;
+  border-color: var(--color-purple);
+  transition: all .3s ease-in-out;
 }
 
 .copyright__wrapper {
@@ -125,5 +126,6 @@
 .contacts__phone:hover,
 .contacts__email:hover,
 .copyright__email:hover {
-  color: #6C0287;
+  color: var(--color-dark-purple);
+  transition: all .3s ease-in-out;
 }
