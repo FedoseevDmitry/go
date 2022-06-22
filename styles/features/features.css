@@ -29,9 +29,13 @@
   transform: translateY(70px);
 }
 
-.features__item:hover,
-.features__item:nth-child(3n+2):hover {
+.features__item:hover {
   transform: scale(110%);
+  transition: all .3s ease-in-out;
+}
+
+.features__item:hover:nth-child(3n+2) {
+  transform: scale(110%) translateY(70px);
   transition: all .3s ease-in-out;
 }
 
