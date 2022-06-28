@@ -4,24 +4,18 @@
 
 .header__wrapper {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   max-height: 66px;
+  justify-content: space-between;
 }
 
 .header__logo {
-  display: flex;
   max-height: 66px;
-  align-self: flex-end;
-}
-
-.nav {
-  display: flex;
 }
 
 .nav__list {
   display: flex;
-  gap: 40px;
+  gap: 41px;
   align-items: center;
 }
 
@@ -48,6 +42,7 @@
   border: 3px solid var(--color-purple);
   border-radius: 10px;
   background-color: transparent;
+  margin-bottom: -5px;
 }
 
 .header__btn:hover {

@@ -1,7 +1,7 @@
 .faq__title {
   font-size: 40px;
   line-height: 50px;
-  margin-bottom: 40px;
+  margin-bottom: 46px;
   text-align: center;
 }
 
@@ -16,7 +16,7 @@
 }
 
 .faq__item:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 
 .faq__item:nth-child(even) {

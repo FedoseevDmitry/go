@@ -1,9 +1,13 @@
+.room {
+  padding-bottom: 100px;
+}
+
 .room__title {
   font-size: 40px;
   line-height: 50px;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 65px;
+  margin-bottom: 45px;
 }
 
 .room__list {
@@ -39,6 +43,7 @@
   background-image: url('img/room-2.png');
   background-size: cover;
   background-repeat: no-repeat;
+  padding-left: 13px;
 }
 
 .wild-west {

@@ -3,12 +3,12 @@
   line-height: 50px;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 46px;
 }
 
 .reviews__block {
   display: flex;
-  gap: 20px;
+  gap: 21px;
   min-height: 319px;
   padding-left: 100px;
   padding-right: 100px;
@@ -27,6 +27,7 @@
   position: relative;
   height: 280px;
   width: 280px;
+  margin-bottom: 11px;
 }
 
 .reviews__gradient:after {
@@ -41,11 +42,8 @@
   background-image: radial-gradient(50% 50% at 50% 50%, rgba(196, 196, 196, 0) 0%, rgba(108, 2, 135, 0.5) 100%);
 }
 
-.reviews__img {
-  margin-bottom: 11px;
-}
-
 .reviews__figcaption {
+  display: block;
   text-align: center;
 }
 

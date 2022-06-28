@@ -1,13 +1,15 @@
+.features {
+  height: 810px;
+}
+
 .features__title {
   font-weight: 700;
   font-size: 40px;
   line-height: 50px;
-  text-align: center;
   text-transform: uppercase;
-  max-width: 980px;
   margin: 0 auto;
   text-align: center;
-  margin-bottom: 41px;
+  margin-bottom: 44px;
   white-space: pre-line;
 }
 
