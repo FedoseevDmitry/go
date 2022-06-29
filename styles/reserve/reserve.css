@@ -44,8 +44,8 @@
   line-height: 40px;
   cursor: pointer;
   border: 3px solid transparent;
-  min-width: 250px;
-  min-height: 55px;
+  width: 250px;
+  height: 55px;
 }
 
 .halls__label:hover {
@@ -264,8 +264,9 @@
   border-radius: 10px;
   width: 300px;
   height: 60px;
-  border: none;
   border: 3px solid transparent;
+  box-shadow: 0 0 10px var(--color-text-main);
+  border-radius: 10px;
 }
 
 .reserve__btn:hover {
@@ -283,4 +284,71 @@
   background-color: var(--color-text-main);
   border-color: var(--color-dark-purple);
   transition: all .3s ease-in-out;
+}
+
+@media (max-width: 1200px) {
+  .reserve {
+    padding-top: 61px;
+    padding-bottom: 60px;
+  }
+
+  .reserve__title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 41px;
+  }
+
+  .reserve__legend {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 25px;
+  }
+
+  .reserve__fieldset {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  
+  .halls {
+    justify-content: space-between;
+    margin-bottom: 62px;
+  }
+  
+  .halls__label {
+    padding: 9px 20px;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 24px;
+    width: 180px;
+    height: 44px;
+  }
+
+  .console-set {
+    padding-left: 0;
+    margin-right: 110px;
+  }
+  
+  .boardgame-set {
+    margin-right: 114px;
+  }
+
+  .reserve__wrapper-info {
+    row-gap: 15px;
+  }
+
+  .contacts-set {
+    margin-bottom: 50px;
+  }
+
+  .contacts-set__input {
+    width: 253px;
+  }
+
+  .reserve__btn {
+    width: 252px;
+    height: 50px;
+    margin-right: 77px;
+    font-size: 18px;
+    line-height: 24px;
+  }
 }

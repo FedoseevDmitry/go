@@ -82,3 +82,67 @@
 .quote__description {
   width: 260px;
 }
+
+@media (max-width: 1200px) {
+  .about {
+    padding-top: 70px;
+    padding-bottom: 35px;
+  }
+
+  .about__title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 26px;
+  }
+
+  .about__wrapper {
+    gap: 40px;
+  }
+
+  .about__images-body {
+    width: 420px;
+    height: 417px;
+  }
+
+  .about__content-body {
+    max-width: 444px;
+  }
+
+  .about__description {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 40px;
+  }
+
+  .quote__text,
+  .quote__text:before,
+  .quote__text:after {
+    font-size: 30px;
+    line-height: 36px;
+    white-space: unset;
+  }
+
+  .quote__boss {
+    padding-left: 114px;
+    height: 78px;
+  }
+
+  .quote__text {
+    padding-left: 25px;
+    max-width: 419px;
+    margin-bottom: 18px;
+  }
+
+  .quote__img {
+    height: 70px;
+    width: 70px;
+    margin-right: 36px;
+    padding-top: 3px;
+  }
+
+  .quote__description {
+    font-size: 18px;
+    line-height: 26px;
+    width: 225px;
+  }
+}

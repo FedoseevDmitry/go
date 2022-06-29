@@ -57,3 +57,34 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+@media (max-width: 1200px) {
+  .room {
+    padding-top: 40px;
+    padding-bottom: 70px;
+  }
+
+  .room__title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 36px;
+  }
+
+  .room__list {
+    gap: 18px;
+  }
+
+  .room__item {
+    height: 267px;
+    width: 443px;
+  }
+
+  .room__name {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .star-wars {
+    padding-left: 0;
+  }
+}

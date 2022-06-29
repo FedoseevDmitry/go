@@ -9,9 +9,7 @@
 .reviews__block {
   display: flex;
   gap: 21px;
-  min-height: 319px;
   padding-left: 100px;
-  padding-right: 100px;
 }
 
 .reviews__block:not(:last-child) {
@@ -50,4 +48,43 @@
 .reviews__text {
   padding-top: 52px;
   max-width: 680px;
+}
+
+@media (max-width: 1200px) {
+  .reviews {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+
+  .reviews__title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 26px;
+  }
+
+  .reviews__block {
+    gap: 38px;
+  }
+
+  .reviews__block:not(:last-child) {
+    margin-bottom: 39px;
+  }
+
+  .reviews__gradient {
+    height: 172px;
+    width: 172px;
+    margin-bottom: 22px;
+  }
+
+  .reviews__figcaption {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .reviews__text {
+    padding-top: 33px;
+    font-size: 18px;
+    line-height: 26px;
+    max-width: 515px;
+  }
 }

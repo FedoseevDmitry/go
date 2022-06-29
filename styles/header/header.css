@@ -9,7 +9,88 @@
   justify-content: space-between;
 }
 
+.burger {
+  display: none;
+  position: relative;
+  width: 54px;
+  height: 54px;
+  border: none;
+  background-color: transparent;
+}
+
+.burger__line {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 5px;
+  background-color: var(--color-dark-purple);
+  transform: translateY(-50%);
+  transition: transform 0.3s;
+  border-radius: 2px;
+}
+
+.burger:before {
+  content: '';
+  position: absolute;
+  top: calc(50% - 12px);
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: var(--color-dark-purple);
+  transition: transform 0.3s, top 0.3s;
+  border-radius: 2px;
+}
+
+.burger:after {
+  content: '';
+  position: absolute;
+  bottom: calc(50% - 12px);
+  left: 0;
+  width: 50%;
+  height: 5px;
+  background-color: var(--color-dark-purple);
+  transition: transform 0.3s, top 0.3s;
+  border-radius: 2px;
+}
+
+.burger:hover .burger__line,
+.burger:hover:before,
+.burger:hover:after {
+  background-color: var(--color-purple);
+}
+
+.burger:active .burger__line,
+.burger:active:before,
+.burger:active:after {
+  background-color: var(--color-bright-purple);
+}
+
+.burger:focus {
+  outline: 1px solid var(--color-dark-purple);
+  outline-offset: 2px;
+}
+
+.burger_active .burger__line {
+  transform: scale(0);
+}
+
+.burger_active::before {
+  transform: rotate(45deg);
+  top: 50%;
+}
+
+.burger_active::after {
+  transform: rotate(-45deg);
+  top: 50%;
+  width: 100%;
+}
+
 .header__logo {
+  display: block;
+}
+
+.header__img {
   max-height: 66px;
 }
 
@@ -61,4 +142,36 @@
   background-color: var(--color-dark-purple);
   border-color: transparent;
   transition: all .3s ease-in-out;
+}
+
+@media (max-width: 1200px) {
+  .header__wrapper {
+    display: flex;
+    align-items: center;
+    max-height: 55px;
+    justify-content: space-between;
+  }
+
+  .header__img {
+    width: 87px;
+    height: 55px;
+  }
+
+  .nav__list {
+    gap: 21px;
+  }
+
+  .nav__link {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .header__btn {
+    height: 45px;
+    width: 229px;
+    font-size: 18px;
+    line-height: 24px;
+    border-radius: 8px;
+    margin-bottom: -2px;
+  }
 }

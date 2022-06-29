@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   position: relative;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -18,7 +19,8 @@ body {
   background-color: var(--color-text-dark);
 }
 
-img {
+img,
+svg {
   max-width: 100%;
   height: auto;
 }
@@ -79,8 +81,22 @@ select:focus {
 
 .container {
   position: relative;
-  width: 1440px;
-  padding-left: 130px;
-  padding-right: 130px;
+  max-width: 1180px;
   margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  body {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .container {
+    max-width: 904px;
+  }
 }
