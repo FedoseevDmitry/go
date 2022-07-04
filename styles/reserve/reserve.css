@@ -151,9 +151,8 @@
 
 .reserve__wrapper-date {
   display: flex;
-  flex-basis: 300px;
-  max-width: 300px;
   flex-wrap: wrap;
+  flex-basis: 300px;
   gap: 36px 32px;
   align-self: flex-end;
 }
@@ -350,5 +349,115 @@
     margin-right: 77px;
     font-size: 18px;
     line-height: 24px;
+  }
+}
+
+@media (max-width: 860px) {
+  .reserve {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .reserve__title {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .reserve__legend {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 29px;
+  }
+
+  .reserve__fieldset {
+    margin-bottom: 0;
+  }
+  
+  .halls {
+    margin-bottom: 50px;
+  }
+  
+  .halls__label {
+    padding: 9px 20px;
+    font-size: 16px;
+    line-height: 20px;
+    width: 150px;
+    height: 38px;
+  }
+
+  .reserve__fieldset_constructor {
+    flex-wrap: wrap;
+    margin-bottom: 49px;
+  }
+
+  .console-set {
+    padding-left: 0;
+    margin-right: 138px;
+    gap: 21px;
+    margin-bottom: 31px;
+  }
+  
+  .boardgame-set {
+    margin-right: 0;
+    gap: 21px;
+  }
+
+  .extra-set {
+    gap: 21px;
+  }
+
+  .console-set__label,
+  .boardgame-set__label,
+  .extra-set__label {
+    font-size: 22px;
+    line-height: 25px;
+    gap: 7px;
+  }
+
+  .console-set__radio {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .boardgame-set__checkbox,
+  .extra-set__checkbox {
+    width: 40px;
+    height: 40px;
+  }
+
+  .reserve__wrapper-date {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    column-gap: 14px;
+    margin-bottom: 44px;
+  }
+
+  .contacts-set__label_time {
+    margin-right: 92px;
+  }
+
+  .contacts-set {
+    margin-bottom: 47px;
+  }
+
+  .contacts-set__input {
+    width: 280px;
+  }
+
+  .contacts-set__input_phone,
+  .contacts-set__input_email {
+    width: 300px;
+  }
+
+  .reserve__wrapper-btn {
+    width: 100%;
+  }
+
+  .reserve__btn {
+    width: 300px;
+    height: 60px;
+    margin-right: 0;
+    font-size: 22px;
+    line-height: 28px;
   }
 }

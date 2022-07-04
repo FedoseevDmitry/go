@@ -16,7 +16,7 @@
 }
 
 .faq__item:not(:last-child) {
-  margin-bottom: 19px;
+  margin-bottom: 21px;
 }
 
 .faq__item:after {
@@ -50,13 +50,13 @@
   cursor: pointer;
 }
 
-.faq__item:nth-child(even):hover::after {
+.faq__item:nth-child(even):after {
   background-image: url("svg/open.svg");
   transition: all .3s ease-in-out;
 }
 
-.faq__item:nth-child(even):active::after {
-  background-image: url("svg/close.svg");
+.faq__item:nth-child(even):hover::after {
+  background-image: url("svg/open.svg");
   transition: all .3s ease-in-out;
 }
 
@@ -65,8 +65,18 @@
   transition: all .3s ease-in-out;
 }
 
-.faq__item:nth-child(odd):active::after {
+.faq__item_active:after {
   background-image: url("svg/close-purple.svg");
+  transition: all .3s ease-in-out;
+}
+
+.faq__item_active:nth-child(even):after {
+  background-image: url("svg/close.svg");
+  transition: all .3s ease-in-out;
+}
+
+.faq__item_active:nth-child(odd):hover::after {
+  background-image: url("svg/hover-purple.svg");
   transition: all .3s ease-in-out;
 }
 
@@ -121,5 +131,38 @@
   
   .faq__item:nth-child(even):active::after {
     background-image: url("svg/close-purple.svg");
+  }
+
+  .faq__item_active:nth-child(even):after {
+    background-image: url("svg/close-purple.svg");
+  }
+
+  .faq__item_active:nth-child(even):hover::after {
+    background-image: url("svg/hover-purple.svg");
+  }
+}
+
+@media (max-width: 860px) {
+  .faq {
+    padding-top: 30px;
+    padding-bottom: 35px;
+  }
+
+  .faq__title {
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 30px;
+  }
+
+  .faq__item {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 22px 59px;
+  }
+
+  .faq__item:after,
+  .faq__item:nth-child(even):after {
+    top: 12px;
+    right: 65px;
   }
 }

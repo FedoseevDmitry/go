@@ -88,3 +88,28 @@
     padding-left: 0;
   }
 }
+
+@media (max-width: 860px) {
+  .room {
+    padding-top: 30px;
+    padding-bottom: 62px;
+  }
+
+  .room__title {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 35px;
+  }
+
+  .room__item {
+    width: 335px;
+    height: 200px;
+    align-items: unset;
+    padding-top: 61px;
+  }
+
+  .room__name {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}

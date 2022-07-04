@@ -34,8 +34,11 @@
   white-space: pre-line;
   font-size: 20px;
   line-height: 28px;
-  margin-bottom: 59px;
   max-height: 222px;
+}
+
+.about__description:last-of-type {
+  margin-bottom: 57px;
 }
 
 .quote__text {
@@ -111,6 +114,9 @@
   .about__description {
     font-size: 18px;
     line-height: 24px;
+  }
+
+  .about__description:last-of-type {
     margin-bottom: 40px;
   }
 
@@ -144,5 +150,69 @@
     font-size: 18px;
     line-height: 26px;
     width: 225px;
+  }
+}
+
+@media (max-width: 860px) {
+  .about {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+  
+  .about__title {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 30px;
+  }
+
+  .about__wrapper {
+    gap: 28px;
+    margin-bottom: 41px;
+  }
+
+  .about__images-body {
+    width: 382px;
+    height: 380px;
+  }
+
+  .about__content-body {
+    max-width: 278px;
+  }
+
+  .about__description {
+    font-size: 16px;
+    line-height: 22px;
+    white-space: unset;
+  }
+
+  .about__description:first-of-type {
+    padding-top: 67px;
+    margin-bottom: 22px;
+  }
+
+  .quote {
+    display: none;
+  }
+
+  .quote__hidden {
+    display: block;
+  }
+
+  .quote__text {
+    font-size: 32px;
+    line-height: 36px;
+    max-width: 666px;
+    padding-left: 22px;
+    margin-bottom: 22px;
+  }
+
+  .quote__boss {
+    padding-left: 0;
+    margin-left: auto;
+    justify-content: flex-end;
+  }
+
+  .quote__img {
+    margin-right: 25px;
   }
 }

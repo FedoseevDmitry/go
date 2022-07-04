@@ -44,31 +44,37 @@
 .features__item_vr {
   background-image: url('img/vr.jpg');
   background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .features__item_audio {
   background-image: url('img/audio.jpg');
   background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .features__item_microphone {
   background-image: url('img/micro.jpg');
   background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .features__item_board-games {
   background-image: url('img/boardgame.jpg');
   background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .features__item_video {
   background-image: url('img/video.jpg');
   background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .features__item_console {
   background-image: url('img/console.jpg');
   background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .features__text {
@@ -123,5 +129,48 @@
     max-width: 247px;
     font-size: 20px;
     line-height: 28px;
+  }
+}
+
+@media (max-width: 860px) {
+  .features {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    height: 812px;
+  }
+
+  .features__title {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 30px;
+  }
+
+  .features__list {
+    gap: 20px;
+  }
+
+  .features__item {
+    width: 334px;
+    height: 200px;
+    padding-top: 132px;
+    padding-left: 30px;
+    padding-bottom: 12px;
+  }
+
+  .features__text {
+    max-width: 300px;
+  }
+
+  .features__item:nth-child(3n+2) {
+    transform: unset;
+  }
+
+  .features__item:hover:nth-child(3n+2) {
+    transform: scale(110%);
+    transition: all .3s ease-in-out;
+  }
+
+  .features__item:nth-child(5) {
+    padding-top: 132px;
   }
 }

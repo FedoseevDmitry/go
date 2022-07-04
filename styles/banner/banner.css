@@ -204,3 +204,73 @@
     top: 469px;
   }
 }
+
+@media (max-width: 860px) {
+  .banner {
+    padding-bottom: 40px;
+  }
+
+  .banner__container {
+    height: 537px;
+  }
+
+  .banner__container:after {
+    background-image: url(img/banner-768.png);
+    height: 479px;
+    width: 409px;
+    top: 58px;
+  }
+
+  .banner__title {
+    font-size: 86px;
+    margin-bottom: 20px;
+  }
+
+  .banner__description {
+    font-size: 18px;
+    line-height: 24px;
+    padding-left: 70px;
+    margin-bottom: 51px;
+  }
+
+  .banner__wrapper {
+    max-width: 222px;
+  }
+
+  .wrapper__list {
+    gap: 23px;
+    margin-bottom: 100px;
+  }
+
+  .wrapper__item {
+    min-width: 103px;
+  }
+
+  .wrapper__text {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .wrapper__text_number {
+    font-size: 50px;
+    line-height: 71px;
+  }
+
+  .wrapper__text_font-big {
+    font-size: 40px;
+    line-height: 56px;
+  }
+
+  .banner__btn {
+    width: 214px;
+    height: 46px;
+    padding: 11px 34px;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+  }
+
+  .banner__arrow {
+    display: none;
+  }
+}
