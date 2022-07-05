@@ -113,3 +113,32 @@
     line-height: 50px;
   }
 }
+
+@media (max-width: 540px) {
+  .room {
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+
+  .room__title {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 14px;
+  }
+
+  .room__list {
+    gap: 10px;
+  }
+
+  .room__item {
+    width: 280px;
+    height: 168px;
+    align-items: center;
+    padding-top: 0;
+  }
+
+  .room__name {
+    font-size: 26px;
+    line-height: 34px;
+  }
+}

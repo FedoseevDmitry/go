@@ -128,3 +128,39 @@
     padding-top: 31px;
   }
 }
+
+@media (max-width: 540px) {
+  .reviews {
+    padding-top: 16px;
+    padding-bottom: 15px;
+  }
+
+  .reviews__title {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 15px;
+  }
+
+  .reviews__block {
+    gap: 15px;
+    padding-left: 0;
+    flex-direction: column;
+  }
+
+  .reviews__block:not(:last-child) {
+    margin-bottom: 22px;
+  }
+
+  .reviews__gradient {
+    margin: 0 auto;
+    width: 86px;
+    height: 86px;
+    margin-bottom: 10px;
+  }
+
+  .reviews__text {
+    padding-top: 0;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}

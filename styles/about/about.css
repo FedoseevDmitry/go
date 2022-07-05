@@ -194,7 +194,7 @@
     display: none;
   }
 
-  .quote__hidden {
+  .quote_hidden {
     display: block;
   }
 
@@ -214,5 +214,97 @@
 
   .quote__img {
     margin-right: 25px;
+  }
+}
+
+@media (max-width: 540px) {
+  .about {
+    padding-top: 30px;
+    padding-bottom: 16px;
+  }
+
+  .about__title {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
+
+  .about__images-body {
+    order: 1;
+  }
+
+  .about__wrapper {
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+
+  .about__content-body {
+    max-width: 263px;
+  }
+
+  .about__description {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .about__description:first-of-type {
+    padding-top: 0;
+    margin-bottom: 16px;
+  }
+
+  .about__description:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .about__images-body {
+    width: 280px;
+    height: 280px;
+  }
+
+  .quote__text {
+    font-size: 18px;
+    line-height: 26px;
+    padding-left: 15px;
+    margin-bottom: 7px;
+  }
+
+  .quote__text:before {
+    top: -8px;
+    left: 1px;
+    font-size: inherit;
+    line-height: inherit;
+  }
+  
+  .quote__text:after {
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  .quote__boss {
+    padding-left: 0;
+    margin-left: 0;
+    justify-content: flex-start;
+    width: 280px;
+    height: 56px;
+  }
+
+  .quote__description {
+    font-size: 12px;
+    line-height: 16px;
+    width: 200px;
+    display: none;
+  }
+
+  .quote__description_hidden {
+    display: block;
+    white-space: pre-line;
+    padding-top: 5px;
+  }
+
+  .quote__img {
+    margin-right: 10px;
+    width: 56px;
+    height: 56px;
   }
 }
