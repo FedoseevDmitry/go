@@ -56,7 +56,7 @@
 }
 
 .faq__item:nth-child(even):hover::after {
-  background-image: url("svg/open.svg");
+  background-image: url("svg/hover.svg");
   transition: all .3s ease-in-out;
 }
 
