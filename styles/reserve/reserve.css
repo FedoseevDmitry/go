@@ -68,9 +68,14 @@
 }
 
 .halls__radio {
-  appearance: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
+  display: none;
+}
+
+.halls__radio:checked + .halls__label {
+	background-color: var(--color-dark-purple);
+  border-color: var(--color-text-main);
+  color: var(--color-text-main);
+  transition: all .3s ease-in-out;
 }
 
 .reserve__fieldset_constructor {
@@ -177,11 +182,14 @@
 
 .contacts-set__input_date,
 .contacts-set__input_time {
-  max-width: 134px;
+  width: 134px;
   padding: 12px 20px;
   font-size: 18px;
   line-height: 28px;
   color: var(--color-text-deep-black);
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
 }
 
 .contacts-set__input:focus,
@@ -343,6 +351,11 @@
     width: 253px;
   }
 
+  .contacts-set__input_date,
+  .contacts-set__input_time {
+    width: 134px;
+  }
+
   .reserve__btn {
     width: 252px;
     height: 50px;
@@ -442,6 +455,11 @@
 
   .contacts-set__input {
     width: 280px;
+  }
+
+  .contacts-set__input_date,
+  .contacts-set__input_time {
+    width: 134px;
   }
 
   .contacts-set__input_phone,
@@ -575,6 +593,11 @@
     width: 280px;
     font-size: 14px;
     line-height: 18px;
+  }
+
+  .contacts-set__input_date,
+  .contacts-set__input_time {
+    width: 134px;
   }
 
   .contacts-set__select {

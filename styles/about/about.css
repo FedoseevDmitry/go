@@ -41,6 +41,10 @@
   margin-bottom: 57px;
 }
 
+.quote_hidden {
+  display: none;
+}
+
 .quote__text {
   position: relative;
   padding-left: 32px;
@@ -84,6 +88,10 @@
 
 .quote__description {
   width: 260px;
+}
+
+.quote__description_hidden {
+  display: none;
 }
 
 @media (max-width: 1200px) {
